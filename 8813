@@ -16,14 +16,17 @@ Answer #1
 
 import java.util.Scanner;
 
-public class E_olymp {
+public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int a = in.nextInt();
-        int b = in.nextInt();
-        int c = in.nextInt();
-        int surfaceArea = 2 * (a*b + b*c + a*c);
-        int volume = a * b * c;
+
+        long a = in.nextLong();
+        long b = in.nextLong();
+        long c = in.nextLong();
+
+        long surfaceArea = 2 * (a*b + b*c + a*c);
+        long volume = a * b * c;
+
         System.out.println(surfaceArea + " " + volume);
     }
 }
