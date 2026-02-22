@@ -1,0 +1,38 @@
+/* Calculate the ratio of the product of the digits of a natural number to the sum of its digits.
+
+Input
+A single natural number n, not exceeding 2⋅10
+9
+ .
+
+Output
+Output the ratio, calculated to 3 decimal places.
+
+Examples
+Input #1
+36
+Answer #1
+2.000 */
+
+import java.util.Scanner;
+
+public class E_olymp {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+
+        int sum = 0;
+        int product = 1;
+        int temp = n;
+
+        while (temp > 0) {
+            int digit = temp % 10;
+            sum += digit;
+            product *= digit;
+            temp /= 10;
+        }
+
+        double ratio = (double) product / sum;
+        System.out.printf("%.3f\n", ratio);
+    }
+}
