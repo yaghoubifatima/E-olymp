@@ -1,0 +1,29 @@
+/* Find the surface area and volume of the rectangular parallelepiped by its dimensions.
+
+Input
+The lengths of edges of rectangular parallelepiped a, b and c (a, b, c ≤ 10 
+6
+ ).
+
+Output
+Print the surface area and volume of the rectangular parallelepiped.
+
+Examples
+Input #1
+2 3 4
+Answer #1
+52 24 */
+
+import java.util.Scanner;
+
+public class E_olymp {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt();
+        int b = in.nextInt();
+        int c = in.nextInt();
+        int surfaceArea = 2 * (a*b + b*c + a*c);
+        int volume = a * b * c;
+        System.out.println(surfaceArea + " " + volume);
+    }
+}
