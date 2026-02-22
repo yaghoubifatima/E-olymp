@@ -1,0 +1,26 @@
+/* Read one integer and print the opposite integer.
+
+Input
+One integer n, no more than 10
+18
+  by absolute value.
+
+Output
+Print the opposite integer.
+
+Examples
+Input #1
+10
+Answer #1
+-10 */
+
+import java.util.Scanner;
+import java.math.BigInteger;
+
+public class E_olymp {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        long n = in.nextLong();
+        System.out.println(-n);
+    }
+}
