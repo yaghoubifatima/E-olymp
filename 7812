@@ -1,0 +1,33 @@
+/* Four integers are given. Find the maximum among them.
+
+Input
+Four integers a,b,c,d, each not exceeding 1000 in absolute value.
+
+Output
+Print the maximum among four numbers.
+
+Examples
+Input #1
+1 2 3 4
+Answer #1
+4 */
+
+import java.util.Scanner;
+
+public class E_olymp {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        int a = in.nextInt();
+        int b = in.nextInt();
+        int c = in.nextInt();
+        int d = in.nextInt();
+
+        int max = a;
+        if (b > max) max = b;
+        if (c > max) max = c;
+        if (d > max) max = d;
+
+        System.out.println(max);
+    }
+}
