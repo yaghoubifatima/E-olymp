@@ -1,0 +1,46 @@
+/* The pupil of the first class additionally obtains a glass of milk and a pie if his weight
+is less than 30 kilograms. In the first class n pupils are studying.
+The volume of the glass of milk is 200 ml, and the volume of the package of milk is 0.9 liters.
+ Find the number of additional packages of milk and pies needed every day.
+
+Input
+The first line contains the integer n (0<n≤100).
+The next line contains n space-separated positive real numbers – the weight of each first-grader.
+
+Output
+Print two integers in one line - the number of additional packages of milk and pies needed every day.
+
+Examples
+Input #1
+8
+30 27 31 25 32 29 25 30
+Answer #1
+1 4
+Input #6
+30
+21.5 36 30 35 22.5 39 45 20.7 38 35 20 24 36 23 20.9 22 21 30 38 33 30 37 31.6 25 32 29 35.8 40 28.9 25
+Answer #6
+3 13 */
+
+import java.util.Scanner;
+
+public class E_olymp {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        int n = in.nextInt();
+        int pies = 0;
+        int milkCups = 0;
+
+        for (int i = 0; i < n; i++) {
+            double w = in.nextDouble();
+            if (w < 30) {
+                milkCups++;
+                pies++;
+            }
+        }
+        int milkPackages = (int) Math.ceil(milkCups / 4.5);
+
+        System.out.println(milkPackages + " " + pies);
+    }
+}
