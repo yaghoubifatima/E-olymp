@@ -1,0 +1,19 @@
+/* Print the message "Hello World!".
+
+Input
+There is no input data.
+
+Output
+Print the message "Hello World!" as shown in the example.
+
+Examples
+Input #1
+
+Answer #1
+Hello World! */
+
+public class E_olymp {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
+}
