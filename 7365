@@ -23,24 +23,16 @@ Answer #6
 3 13 */
 
 import java.util.Scanner;
+import java.lang.Math;
 
-public class E_olymp {
+public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        int count = 0, n = in.nextInt();
 
-        int n = in.nextInt();
-        int pies = 0;
-        int milkCups = 0;
+        for (int i = 0; i < n; i++)
+            if (in.nextDouble() < 30) count++;
 
-        for (int i = 0; i < n; i++) {
-            double w = in.nextDouble();
-            if (w < 30) {
-                milkCups++;
-                pies++;
-            }
-        }
-        int milkPackages = (int) Math.ceil(milkCups / 4.5);
-
-        System.out.println(milkPackages + " " + pies);
+        System.out.println((int)Math.ceil(count / 4.5) + " " + count);
     }
 }
