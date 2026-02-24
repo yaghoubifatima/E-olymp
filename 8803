@@ -18,10 +18,6 @@ import java.util.Scanner;
 public class E_olymp {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-
-        long olenaPosition = in.nextLong();
-        long totalStudents = olenaPosition + 1;
-
-        System.out.println(totalStudents);
+        System.out.println(in.nextLong() + 1);
     }
 }
