@@ -20,13 +20,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        long a = in.nextLong();
-        long b = in.nextLong();
-        long c = in.nextLong();
+        long a = in.nextLong(), b = in.nextLong(), c = in.nextLong();
 
-        long surfaceArea = 2 * (a*b + b*c + a*c);
-        long volume = a * b * c;
-
-        System.out.println(surfaceArea + " " + volume);
+        System.out.println(2 * (a*b + b*c + a*c) + " " + (a*b*c));
     }
 }
